@@ -1,0 +1,27 @@
+<div class = "overlay">
+<header>
+  <img src = "../assets/images/mushroomEncyclopedia.png" id = "logo" >
+</header>
+
+<section id = "welcome">
+ <h1> Welcome </h1>
+ <p> Identify the specific type of <br> mushroom by uploading an
+image </p>
+
+<label for = "mushroom"> Choose File </label>
+<input type="file"
+       id="mushroom" name="mushroom"
+       accept="image/png, image/jpeg" (change)="fileChange($event)">
+       
+           
+<div style = "position: absolute; display: inline-block; visibility: hidden;">
+   <img id = "mushroomAttachment" src="/assets/images/beech.png" style = "width: 50px; height: 50px">
+</div>
+       
+<div class = "findMushroom" style = "padding-top: 19px;">
+  <a routerLink = "/mushroomIdentification"> <input type="button" value="Find Mushroom"  id = "findMushroom" style = "border: 0; padding: 19px; background-color: white; font-family: 'Karla'; font-weight: 700; font-size: 1.7vw; cursor:pointer;"> </a>
+</div>
+
+<p style = "float: right; padding-top: 180px; padding-right: 40px;"> 3D Man by VAGO . </p>
+</section>
+</div>

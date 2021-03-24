@@ -1,0 +1,23 @@
+<div class = "overlaySize">
+<header>
+  <img src = "../assets/images/mushroomEncyclopediaIdentification.png" id = "logo" >
+</header>
+<video width="427" height="240" autoplay="true" style = "padding-left: 4.0em; padding-top: 98.5px; width: 25vw !important; height: 5vh !important;">
+  <source src="../assets/mushroomAnimation.mp4" type="video/mp4">
+</video>
+<div id = "mushroomCouncil" style = "float:right; padding-top: 203px; padding-right: 104px;">
+ <img style = "display: inline;" src = {{mushroom.mushroomModel}}>
+</div>
+<section id = "mushroomSelect" style = "padding-left: 4em; padding-top: 79px; width: 30%;">
+  <div class = "mushroomText">
+    <img id = "mushroomIsEdible" *ngIf="mushroom.isEdible" src = "../assets/images/edibleMushroom.svg" style = "display: inline-block; float: right;">
+    <img id = "mushroomIsEdible" *ngIf="mushroom.isEdible == false" src = "../assets/images/nonedibleMushroom.svg" style = "display: inline-block; float: right;">
+    <h1 id = "mushroomName" style = "font-family: 'Karla'; font-weight: 700; color: #9BA685; text-transform: capitalize;"> {{mushroom.name}} </h1>
+    <h3 id= "mushroomBinomialNomenclature" style = "font-family: 'Karla-Italic'; font-weight: 300; color: #9BA685;"> {{mushroom.binomialNomenclature}} </h3>
+    <p id = "mushroomGeneralBackground" style = "font-family: 'Karla'; color: #9BA685;"> {{mushroom.generalBackground}} </p>
+    <h1 id = "mushroomIsConsumable" *ngIf="mushroom.isConsumable" style = "font-family: 'Karla'; font-weight: 700; color: #2C6938; float:right"> You can consume! </h1>
+    <h1 id = "mushroomIsConsumable" *ngIf="mushroom.isConsumable == false" style = "font-family: 'Karla'; font-weight: 700; color: #D95555; float:right"> Do not consume! </h1>
+    <img id = "backToHome" src = "../assets/images/arrow.svg"> <a id = "backToHome" routerLink = "/" style = "text-decoration: none;"> <p id = "backToHome" style= "display: inline; font-family: 'Karla'; color: #957336;"> Back to home </p> </a>
+  </div>
+</section>
+</div>

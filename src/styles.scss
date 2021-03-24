@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Karla';
+    src: url('~assets/fonts/Karla[wght].ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url('~assets/fonts/Karla-Italic[wght].ttf') format('truetype');
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/images/hiker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #d2ab63;
+}
+
+/*
+body {
+  background-image: url("assets/images/hiker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+header {
+  padding-left: 4em;
+  padding-top: 4em;
+}
+
+#logo {
+  height: 2.3vw;
+}
+
+#welcome {
+  padding-left: 4em;
+  
+  h1 {
+    font-family: "Karla";
+    font-weight: 700;
+    color: white;
+    font-size: 4vw;
+  }
+  
+  p {
+    font-family: "Karla";
+    font-weight: 700;
+    color: white;
+    font-size: 1.7vw;
+  }
+  
+  label {
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 1.7vw;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12.4px;
+    width: 12%;
+  }
+  
+  #mushroom {
+    display: none;
+  }
+  
+  #findMushroom:hover {
+    background-color: #7C5026 !important;
+    color: white;
+    transition-duration: 0.25s;
+  }
+  
+  .overlaySize {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .findMushroom {
+    visibility: hidden;
+  }
+  
+  .fadeIn {
+    visibility: visible;
+    animation: fadeIn ease-in-out 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {transform: translateY(-22px); opacity:0;}
+    100% {transform: translateY(0px); opacity:1;}
+  }
+  
+
+  
+}
+
+
